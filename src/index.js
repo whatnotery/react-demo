@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Lottery from './Lottery';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Lottery maxBalls="6" maxNum="40" />
+    <Lottery maxBalls="4" maxNum="10"/>
+    <Lottery maxBalls="1" maxNum="75" title="Bingo"/>
   </React.StrictMode>,
   document.getElementById('root')
 );
